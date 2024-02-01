@@ -46,6 +46,12 @@
       <p>
         Please feel free to get in touch with me on LinkedIn!
       </p>
+      
+      
+      <label for="theme-toggle" class="toggle-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="switch"></span>
+      </label>
 
       <!-- Icons -->
       <ul class="icons">
@@ -57,6 +63,13 @@
         </li>
       </ul>
     </section>
+
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
   </body>
  
 </html>

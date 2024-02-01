@@ -50,6 +50,65 @@ a:hover {
     color: black;
 }
 
-.icons a:hover {
-    color: #1565c0;
+body {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
+  
+body.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.icons i {
+    color: white;
+    transition: color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .icons i {
+    color: black;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .2s;
+    border-radius: 17px;
+  }
+  
+  .switch::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .2s;
+    border-radius: 20px;
+  }
+  
+  input:checked + .switch {
+    background-color: #404040;
+  }
+  
+  input:checked + .switch::before {
+    transform: translateX(26px);
+  }
