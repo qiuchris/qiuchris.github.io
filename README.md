@@ -1,2 +1,2 @@
 # qiuchris.github.io
-A work-in-progress website
+My personal website which uses [this](https://github.com/timothygebhard/minimal-academic-website) template.
